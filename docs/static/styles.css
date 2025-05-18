@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('backgroundimage.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+.radio-buttons {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px;
+    margin: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto; 
+    display: block; 
+}
+
+
+button:hover {
+    background-color: #4cae4c;
+}
