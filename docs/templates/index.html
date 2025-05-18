@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>SIGNAL LIGHTS</title>
+</head>
+<body>
+    <div class="container">
+        <h1>AUTO SIGNAL LIGHT TIME ADJUSTER</h1>
+        <form method="POST">
+            <div class="radio-buttons">
+
+            <label><input type="checkbox" name="roads" value="0"> Lane 1</label><br>
+            <label><input type="checkbox" name="roads" value="1"> Lane 2</label><br>
+            <label><input type="checkbox" name="roads" value="2"> Lane 3</label><br>
+            <label><input type="checkbox" name="roads" value="3"> Lane 4</label><br>
+            <label><input type="checkbox" name="roads" value="4"> Lane 5</label><br>
+            <label><input type="checkbox" name="roads" value="5"> Lane 6</label><br>
+            
+            </div>
+            <button type="submit">PROCESS</button>
+        </form>
+    </div>
+</body>
+</html>

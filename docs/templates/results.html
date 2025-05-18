@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Traffic Analysis Results</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Analysed Lane Results</h1>
+        <ul>
+            {% for index in selected_roads %}
+                <li>
+                    <strong>Road {{ index + 1 }}</strong>: 
+                    <br>Vehicle Count: {{ vehicle_counts[index] }}
+                    <br>Signal Light: {{ current_cycles[index] }}
+                    <br>Duration: {{ traffic_times[index] }} seconds
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="{{ url_for('index') }}">Back to Selection</a>
+    </div>
+</body>
+</html>
